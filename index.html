@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,9 +17,17 @@
             </a>
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
-                    <li class="site-navigation-item"><a>Доставка и оплата</a></li>
-                    <li class="site-navigation-item"><a>О компании</a></li>
+                    <li class="site-navigation-item site-navigation-drop"><a class="navigation-link" href="catalog.html"><button class="drop-button">Каталог</button></a>
+                        <div class="drop-content">
+                            <h3>Новинки</h3>
+                            <a class="drop-link" href="#">Сливочное</a>
+                            <a class="drop-link" href="#">Щербеты</a>
+                            <a class="drop-link" href="#">Фруктовый лед</a>
+                            <a class="drop-link" href="#">Мелорин</a>
+                        </div>
+                    </li>
+                    <li class="site-navigation-item"><a class="navigation-link">Доставка и оплата</a></li>
+                    <li class="site-navigation-item"><a class="navigation-link">О компании</a></li>
                 </ul>
             </nav>
             <div class="basket">
@@ -292,6 +302,7 @@
             <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </form>
     </section>
+    <script src="js/modal-show.js"></script>
 </body>
 
 </html>

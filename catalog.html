@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,8 +18,8 @@
             <nav class="main-navigation">
                 <ul class="site-navigation">
                     <li class="site-navigation-catalog"><a href="catalog.html">Каталог</a></li>
-                    <li class="site-navigation-item"><a>Доставка и оплата</a></li>
-                    <li class="site-navigation-item"><a>О компании</a></li>
+                    <li class="site-navigation-item"><a class="navigation-link">Доставка и оплата</a></li>
+                    <li class="site-navigation-item"><a class="navigation-link">О компании</a></li>
                 </ul>
             </nav>
             <div class="basket">
@@ -46,12 +48,14 @@
             <form class="calculation-form" method="get" action="https://echo.htmlacademy.ru/">
                 <fieldset class="filter-item">
                     <legend class="header-cost">Сортировка:</legend>
-                    <select class="calculation-list" id="select-list" name="sorting-select">
-                    <option value="По популярности">По популярности</option>
-                    <option value="С начала не дорогие">С начала не дорогие</option>
-                    <option value="С начала дорогие">С начала дорогие</option>
-                    <option value="По жирности">По жирности</option>
-                  </select>
+                    <div class="calculation-select">
+                        <select class="calculation-list calculation-select-list" id="select-list" name="sorting-select">
+                        <option value="По популярности">По популярности</option>
+                        <option value="С начала не дорогие">С начала не дорогие</option>
+                        <option value="С начала дорогие">С начала дорогие</option>
+                        <option value="По жирности">По жирности</option>
+                    </select>
+                    </div>
                 </fieldset>
                 <div class="cost">
                     <fieldset class="filter-item">
@@ -423,6 +427,7 @@
                 <p>300р</p>
             </div>
             <div class="modal-catalog-ice-cream">
+                <button class="modal-delite-ice" type="button" aria-label="Удалить"></button>
                 <img class="modal-image" src="img/modal-ice-cream-raspberries.jpg">
                 <p class="modal-text">Клубничный пломбир с присыпкой из белого шоколада</p>
                 <p>1,5 кг х <span>300 руб.</span></p>
