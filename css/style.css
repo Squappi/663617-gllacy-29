@@ -111,7 +111,6 @@ ul {
 }
 
 .drop-content .drop-link:hover {
-    /* background-color: var(--black-text); */
     padding: 0;
 }
 
@@ -888,11 +887,6 @@ ul {
     display: inline-block;
 }
 
-.calculation-select-list {
-    max-width: 193px;
-    appearance: none;
-}
-
 .calculation-list {
     display: flex;
     justify-content: space-between;
@@ -1116,6 +1110,7 @@ ul {
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.2);
+    z-index: 10;
 }
 
 .all-ice-cream-cost {
@@ -1155,7 +1150,6 @@ ul {
     opacity: 0;
     transition: 1s;
     text-align: center;
-    z-index: 5;
 }
 
 .button-ice-cream {
