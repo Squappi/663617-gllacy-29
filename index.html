@@ -17,7 +17,7 @@
             </a>
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li class="site-navigation-item site-navigation-drop"><a class="navigation-link" href="catalog.html"><button class="drop-button">Каталог</button></a>
+                    <li class="site-navigation-item site-navigation-drop"><a class="navigation-link" href="catalog.html"><button type="button" class="drop-button"><span>Каталог</span></button></a>
                         <div class="drop-content">
                             <h3>Новинки</h3>
                             <a class="drop-link" href="#">Сливочное</a>
@@ -26,12 +26,12 @@
                             <a class="drop-link" href="#">Мелорин</a>
                         </div>
                     </li>
-                    <li class="site-navigation-item"><a class="navigation-link">Доставка и оплата</a></li>
-                    <li class="site-navigation-item"><a class="navigation-link">О компании</a></li>
+                    <li class="site-navigation-item"><a class="navigation-link"><span>Доставка и оплата</span></a></li>
+                    <li class="site-navigation-item"><a class="navigation-link"><span>О компании</span></a></li>
                 </ul>
             </nav>
             <div class="basket">
-                <button class="button-search" type="button" aria-label="Поиск"><span class="visually-hidden">Поиск</span></button>
+                <button id="button-search-hover" class="button-search" type="button" aria-label="Поиск"><span class="visually-hidden">Поиск</span></button>
                 <button class="button-login" type="button">Вход</button>
                 <button class="button-basket" type="button">Пусто</button>
             </div>
@@ -45,24 +45,19 @@
                     <ul class="slider-list">
                         <li class="slider-item slide slide-current">
                             <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
-                            <a class="button slide-button" href="">
-                  Давайте оба!</a>
+                            <a class="button slide-button" href="">Давайте оба!</a>
                         </li>
                         <li class="slider-item slide">
                             <h3 class="slide-title">
                                 Шоколадный пломбир и лимонный сорбет
                             </h3>
-                            <a class="button slide-button" href="#">
-                  Давайте оба!
-                </a>
+                            <a class="button slide-button" href="#">Давайте оба!</a>
                         </li>
                         <li class="slider-item slide">
                             <h3 class="slide-title">
                                 Пломбир с помадкой и клубничный щербет
                             </h3>
-                            <a class="button slide-button" href="#">
-                  Давайте оба!
-                </a>
+                            <a class="button slide-button" href="#">Давайте оба!</a>
                         </li>
                         <div class="slider-controls">
                             <button class="current" type="button" aria-label="Первый слайд"></button>
@@ -233,12 +228,12 @@
             </div>
             <div class="about-us">
                 <ul class="about-list">
-                    <li class="about-item"><span>Для поставщиков</span></li>
-                    <li class="about-us-item">О производстве</li>
+                    <li class="about-item"><span class="footer-underline">Для поставщиков</span></li>
+                    <li class="about-us-item"><span class="footer-underline">О производстве</span></li>
                 </ul>
                 <ul class="about-list-footer">
-                    <li class="about-us-item">Наши документы</li>
-                    <li class="about-us-item">Экологические стандарты</li>
+                    <li class="about-us-item"><span class="footer-underline">Наши документы</span></li>
+                    <li class="about-us-item"><span class="footer-underline">Экологические стандарты</span></li>
                 </ul>
             </div>
             <div class="partners">
@@ -262,7 +257,7 @@
             </div>
         </div>
     </footer>
-    <section class="modal modal-login">
+    <section id="hover-search" class="modal modal-login">
         <form class="modal-open-login" action="https://echo.htmlacademy.ru/" method="get">
             <div class="login-field">
                 <label class="visually-hidden" for="form-login">Ваш логин:</label>

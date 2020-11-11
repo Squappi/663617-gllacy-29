@@ -17,15 +17,15 @@
             </a>
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li class="site-navigation-catalog"><a href="catalog.html">Каталог</a></li>
-                    <li class="site-navigation-item"><a class="navigation-link">Доставка и оплата</a></li>
-                    <li class="site-navigation-item"><a class="navigation-link">О компании</a></li>
+                    <li class="site-navigation-catalog"><a href="">Каталог</a></li>
+                    <li class="site-navigation-item"><a class="navigation-link"><span>Доставка и оплата</span></a></li>
+                    <li class="site-navigation-item"><a class="navigation-link"><span>О компании</span></a></li>
                 </ul>
             </nav>
             <div class="basket">
                 <button class="button-search" type="button" aria-label="Поиск"><span class="visually-hidden">Поиск</span></button>
                 <button class="button-login" type="button">Вход</button>
-                <button class="button-basket" type="button">Пусто</button>
+                <button class="button-basket-active" type="button"><span>2 товара<span</button>
             </div>
         </div>
     </header>
@@ -75,14 +75,22 @@
                 <fieldset class="filter-item">
                     <legend class="header-cost">Жирность:</legend>
                     <ul class="calculation-list">
-                        <input class="filter-radio" type="radio" name="grid" id="button-zero" value="zero">
-                        <label class="filter-radio-label" for="button-zero"><span>0%</span></label>
-                        <input class="filter-radio" type="radio" name="grid" value="ten" id="button-ten" checked>
-                        <label class="filter-radio-label" for="button-ten"><span>до 10%</span></label>
-                        <input class="filter-radio" type="radio" name="grid" value="thirty" id="button-thirty">
-                        <label class="filter-radio-label" for="button-thirty"><span>до 30%</span></label>
-                        <input class="filter-radio" type="radio" name="grid" value="more-thirty" id="button-more-thirty">
-                        <label class="filter-radio-label" for="button-more-thirty"><span>выше 30%</span></label>
+                        <li>
+                            <input class="filter-radio" type="radio" name="grid" id="button-zero" value="zero">
+                            <label class="filter-radio-label" for="button-zero"><span>0%</span></label>
+                        </li>
+                        <li>
+                            <input class="filter-radio" type="radio" name="grid" value="ten" id="button-ten" checked>
+                            <label class="filter-radio-label" for="button-ten"><span>до 10%</span></label>
+                        </li>
+                        <li>
+                            <input class="filter-radio" type="radio" name="grid" value="thirty" id="button-thirty">
+                            <label class="filter-radio-label" for="button-thirty"><span>до 30%</span></label>
+                        </li>
+                        <li>
+                            <input class="filter-radio" type="radio" name="grid" value="more-thirty" id="button-more-thirty">
+                            <label class="filter-radio-label" for="button-more-thirty"><span>выше 30%</span></label>
+                        </li>
                     </ul>
                 </fieldset>
                 <fieldset class="filter-item">
@@ -209,7 +217,7 @@
                 </li>
                 <li class="all-ice-cream-item">
                     <a class="all-icon-stock">
-                        <img src="img/chocolateСhips.jpg" alt="Сливочное с шоколадной стружкой" width="267">
+                        <img src="img/chocolatechips.jpg" alt="Сливочное с шоколадной стружкой" width="267">
                     </a>
                     <div class="header-container">
                         <h3 class="all-ice-cream-cost">320₽</h3>
@@ -249,7 +257,7 @@
                 </li>
                 <li class="all-ice-cream-item">
                     <a class="all-icon-stock">
-                        <img src="img/blackChocolate.jpg" alt="Сливочное с кусочками черного шоколада" width="267">
+                        <img src="img/blackchocolate.jpg" alt="Сливочное с кусочками черного шоколада" width="267">
                     </a>
                     <div class="header-container">
                         <h3 class="all-ice-cream-cost">355₽</h3>
@@ -348,12 +356,12 @@
             </div>
             <div class="about-us">
                 <ul class="about-list">
-                    <li class="about-item"><span>Для поставщиков</span></li>
-                    <li class="about-us-item">О производстве</li>
+                    <li class="about-item"><span class="footer-underline">Для поставщиков</span></li>
+                    <li class="about-us-item"><span class="footer-underline">О производстве</span></li>
                 </ul>
                 <ul class="about-list-footer">
-                    <li class="about-us-item">Наши документы</li>
-                    <li class="about-us-item">Экологические стандарты</li>
+                    <li class="about-us-item"><span class="footer-underline">Наши документы</span></li>
+                    <li class="about-us-item"><span class="footer-underline">Экологические стандарты</span></li>
                 </ul>
             </div>
             <div class="partners">
@@ -422,14 +430,14 @@
         <div class="modal-catalog-cart">
             <div class="modal-catalog-basket">
                 <button class="modal-delite" type="button" aria-label="Удалить"></button>
-                <img class="modal-image" src="img/modal-ice-cream.jpg">
+                <img class="modal-image" alt="Пломбир с апельсиновым джемом" src="img/modal-ice-cream.jpg">
                 <p class="modal-text">Пломбир с апельсиновым джемом</p>
                 <p>1,5 кг х <span>200 руб.</span></p>
                 <p>300р</p>
             </div>
             <div class="modal-catalog-ice-cream">
                 <button class="modal-delite-ice" type="button" aria-label="Удалить"></button>
-                <img class="modal-image" src="img/modal-ice-cream-raspberries.jpg">
+                <img class="modal-image" alt="Клубничный пломбир с присыпкой из белого шоколада" src="img/modal-ice-cream-raspberries.jpg">
                 <p class="modal-text">Клубничный пломбир с присыпкой из белого шоколада</p>
                 <p>1,5 кг х <span>300 руб.</span></p>
                 <p>450р</p>

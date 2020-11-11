@@ -4,7 +4,15 @@ const modalClose = modalShow.querySelector(".modal-close");
 const buttonSearch = document.querySelector(".button-search");
 const modalCart = document.querySelector(".modal-cart");
 
-
+window.onload = function() {
+    var a = document.querySelector('#button-search-hover')
+    a.onmouseout = function(e) {
+        document.getElementsById('hover-search').style.display = 'none';
+    }
+    a.onmouseover = function(e) {
+        document.getElementById('hover-search').style.display = 'block';
+    };
+}
 
 buttonCart.addEventListener("click", function(evt) {
     evt.preventDefault();
